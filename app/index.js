@@ -6,11 +6,11 @@ headerTemplate.innerHTML = `
     <h2 id="page-title"> IMDb </h2>
     <nav>
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="movies.html">MOVIES</a></li>
-            <li><a href="add_movie.html">ADD MOVIE</a></li>
-            <li><a href="reviews.html">REVIEWS</a></li>
-            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="/app/index.html">HOME</a></li>
+            <li><a href="/app/view/movies.html">MOVIES</a></li>
+            <li><a href="/app/view/add_movie.html">ADD MOVIE</a></li>
+            <li><a href="/app/view/reviews.html">REVIEWS</a></li>
+            <li><a href="/app/view/login.html">LOGIN</a></li>
         </ul>
     </nav>
 </div>
