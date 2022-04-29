@@ -16,9 +16,12 @@ header, footer {
     width: 100%;
 }
 
+header {
+    margin: auto;
+}
 
 footer {
-    position: relative;
+    position: static;
     bottom: 0;
 }
 
@@ -30,19 +33,17 @@ page {
 
 #page-title {   
     padding: 10px;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
     font-weight: bold;
     color: black;
-    margin-left: 50px;
     border-radius: 10px;
     background-color: rgb(245 218 13 / 94%);
     font-size: 35px;
     display: inline-block;
+    margin: auto;
 }
 
 nav{
-	top: 110px;
-	right: 0;
     display: inline-block;
 }
 
@@ -65,18 +66,24 @@ nav a:hover{
 }
 
 #box{
-	position: relative;
+	/*position: relative;*/
 	width: 940px;
 	margin: 0 auto;
+    height: 50px;
     
 }
 
 /* POSTERS SECTION*/
 
+#movies-page-content{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .movies-section{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
 }
 
 .poster-area{
@@ -94,19 +101,16 @@ nav a:hover{
     border: 15px solid rgb(31, 2, 2);
     border-radius: 5px;
     box-shadow: 0px 0px 19px rgb(0, 0, 0), 0px 0px 30px rgba(0,0,0,0.9);
-    -webkit-filter: brightness(0.8);
-    -moz-filter: brightness(0.8);
-    -o-filter: brightness(0.8);
-    -ms-filter: brightness(0.8);
 }
 
 .poster-content:hover{
-    -webkit-filter: brightness(1.4);
-    -moz-filter: brightness(1.4);
-    -o-filter: brightness(1.4);
-    -ms-filter: brightness(1.4);
+    -webkit-filter: brightness(1.2);
+    -moz-filter: brightness(1.2);
+    -o-filter: brightness(1.2);
+    -ms-filter: brightness(1.2);
     cursor: pointer;
     box-shadow: 0px 0px 30px rgb(0, 0, 0), 0px 0px 30px rgba(0,0,0,0.9);
-    
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 

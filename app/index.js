@@ -1,7 +1,7 @@
 
 function generateHeaderAndFooter() {
-    const eHeaderTemplate = document.createElement("node");
-    const eFooterTemplate = document.createElement("node");
+    const eHeaderTemplate = document.createElement("div");
+    const eFooterTemplate = document.createElement("div");
 
     eHeaderTemplate.innerHTML = `
     <div id="box">  
@@ -51,7 +51,7 @@ function onLoadHomePageMovies() {
                 eSection.appendChild(eArticle);
             });
 
-            const oHomePage = document.getElementById("movies-grade");
+            const oHomePage = document.getElementById("movies-page-content");
             oHomePage.appendChild(eSection);
         });
 }
