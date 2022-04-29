@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start_database": "json-server --watch app/json-server-lib/data.json"
+    "start_database": "json-server --watch app/json-server/data.json"
   },
   "repository": {
     "type": "git",
