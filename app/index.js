@@ -1,3 +1,4 @@
+
 function generateHeaderAndFooter(){
     const headerTemplate = document.createElement("node");
     const footerTemplate = document.createElement("node");
@@ -25,6 +26,12 @@ function generateHeaderAndFooter(){
     document.querySelector("footer").appendChild(footerTemplate);
 }
 
+function onLoadPage(){
+    axios.get('http://localhost:3000/movies')
+        .then(resp => {
+        console.log(resp.data);
+    });
+}
 
 
 /* exemplo de uso do Axios:
