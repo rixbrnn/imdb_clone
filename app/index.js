@@ -22,3 +22,14 @@ footerTemplate.innerHTML = `
 
 document.querySelector("header").appendChild(headerTemplate);
 document.querySelector("footer").appendChild(footerTemplate);
+
+/* exemplo de uso do Axios:
+axios.post('http://localhost:3000/genres', {"foo":"bar"}).then(resp => {
+
+    console.log(resp.data);
+});
+
+axios.get('http://localhost:3000/genres').then(resp => {
+
+    console.log(resp.data);
+}); */
