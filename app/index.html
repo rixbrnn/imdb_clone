@@ -7,11 +7,10 @@
         <script src="/node_modules/axios/dist/axios.min.js"></script>
         <script src="index.js" type="text/javascript" defer></script>
     </head>
-    <body onload="generateHeaderAndFooter()">
+    <body onload="onLoadHomePage()">
         <header>
         </header>
-        <page onload="onLoadPage()">
-            <h1> Movie grade list to be attached here </h1>
+        <page id="movies-grade" onload="onLoadPage()">
         </page>
         <footer>
         </footer>

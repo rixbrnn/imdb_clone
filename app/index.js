@@ -1,9 +1,9 @@
 
-function generateHeaderAndFooter(){
-    const headerTemplate = document.createElement("node");
-    const footerTemplate = document.createElement("node");
-    
-    headerTemplate.innerHTML = `
+function generateHeaderAndFooter() {
+    const eHeaderTemplate = document.createElement("node");
+    const eFooterTemplate = document.createElement("node");
+
+    eHeaderTemplate.innerHTML = `
     <div id="box">  
         <h2 id="page-title"> IMDb </h2>
         <nav>
@@ -17,20 +17,43 @@ function generateHeaderAndFooter(){
         </nav>
     </div>
     `;
-    
-    footerTemplate.innerHTML = `
+
+    eFooterTemplate.innerHTML = `
         <h2> Desenvolvimento para a web - Unisinos </h2>
     `;
-    
-    document.querySelector("header").appendChild(headerTemplate);
-    document.querySelector("footer").appendChild(footerTemplate);
+
+    document.querySelector("header").appendChild(eHeaderTemplate);
+    document.querySelector("footer").appendChild(eFooterTemplate);
 }
 
-function onLoadPage(){
+function onLoadHomePage() {
+    generateHeaderAndFooter();
+    onLoadHomePageMovies();
+}
+
+function onLoadHomePageMovies() {
     axios.get('http://localhost:3000/movies')
         .then(resp => {
-        console.log(resp.data);
-    });
+            const eSection = document.createElement("section");
+            eSection.classList.add("movies-section")
+            resp.data?.forEach(oMovie => {
+                const eArticle = document.createElement("div");
+                eArticle.classList.add("poster-area");
+
+                const eDiv = document.createElement("article");
+                eDiv.classList.add("poster-content")
+                eArticle.appendChild(eDiv);
+
+                const eImg = document.createElement("img");
+                eImg.setAttribute("src", oMovie.image_url);
+
+                eDiv.appendChild(eImg);
+                eSection.appendChild(eArticle);
+            });
+
+            const oHomePage = document.getElementById("movies-grade");
+            oHomePage.appendChild(eSection);
+        });
 }
 
 

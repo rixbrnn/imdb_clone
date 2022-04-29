@@ -3,6 +3,9 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjQ2Mi1uLTEzMC10ZXh0dXJlaWRlYV8xLmpwZw.jpg?s=KWnwElvrZQjrd95v8ifqQ5skVxjp4IoueaNPCyZjf5E");
+    background-repeat: repeat;
+    background-size: 100%;
   }
 
 header, footer {
@@ -10,12 +13,15 @@ header, footer {
     color: rgb(246, 246, 246);
     padding: 40px 0;
     text-align: center;
-}
-footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
+
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
 page {
     padding: 10%;
     text-align: center;
@@ -64,3 +70,43 @@ nav a:hover{
 	margin: 0 auto;
     
 }
+
+/* POSTERS SECTION*/
+
+.movies-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.poster-area{
+    flex: 0 0 33.333333%;
+}
+
+.poster-content{
+    max-width: 100%;
+    margin: 15%;
+}
+.poster-content img{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    border: 15px solid rgb(31, 2, 2);
+    border-radius: 5px;
+    box-shadow: 0px 0px 19px rgb(0, 0, 0), 0px 0px 30px rgba(0,0,0,0.9);
+    -webkit-filter: brightness(0.8);
+    -moz-filter: brightness(0.8);
+    -o-filter: brightness(0.8);
+    -ms-filter: brightness(0.8);
+}
+
+.poster-content:hover{
+    -webkit-filter: brightness(1.4);
+    -moz-filter: brightness(1.4);
+    -o-filter: brightness(1.4);
+    -ms-filter: brightness(1.4);
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0), 0px 0px 30px rgba(0,0,0,0.9);
+    
+}
+
