@@ -7,10 +7,6 @@ axios.get('http://localhost:3000/movies')
     console.log(err)
 })
 
-function displayMovies(movie) {
-    document.getElementById(`idGenres_${movie.id}`).innerText = movie.genre_ids[0]
-}
-
 function setList(movies) {
     let list = "";
     movies.forEach(movie => {
