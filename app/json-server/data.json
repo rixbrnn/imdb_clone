@@ -27,7 +27,8 @@
       "pegi": "12",
       "release_date": "01/10/2019",
       "creation_user": "rixbrnn",
-      "creation_date": "04/25/2022"
+      "creation_date": "04/25/2022",
+      "director": "Ednaldo Pereira"
     },
     {
       "id": "1",
@@ -41,7 +42,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     },
     {
       "id": "2",
@@ -55,7 +57,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     },
     {
       "id": "3",
@@ -69,7 +72,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
     ,{
       "id": "4",
@@ -83,7 +87,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
     ,{
       "id": "5",
@@ -97,7 +102,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
     ,{
       "id": "6",
@@ -111,7 +117,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
     ,{
       "id": "1",
@@ -125,7 +132,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
     ,{
       "id": "7",
@@ -139,7 +147,8 @@
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022"
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
     }
   ],
   "reviews": [

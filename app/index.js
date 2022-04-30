@@ -4,8 +4,8 @@ function generateHeaderAndFooter() {
     const eFooterTemplate = document.createElement("div");
 
     eHeaderTemplate.innerHTML = `
-    <div id="box">  
-        <h2 id="page-title"> IMDb </h2>
+    <div id="header-content">  
+        <h2 id="page-logo"> IMDb </h2>
         <nav>
             <ul>
                 <li><a href="/app/index.html">HOME</a></li>
@@ -37,17 +37,32 @@ function onLoadHomePageMovies() {
             const eSection = document.createElement("section");
             eSection.classList.add("movies-section")
             resp.data?.forEach(oMovie => {
+
                 const eArticle = document.createElement("div");
                 eArticle.classList.add("poster-area");
 
                 const eDiv = document.createElement("article");
                 eDiv.classList.add("poster-content")
-                eArticle.appendChild(eDiv);
+                
 
                 const eImg = document.createElement("img");
                 eImg.setAttribute("src", oMovie.image_url);
+               
 
+                const eInfoButtonWrapper = document.createElement("span");
+                eInfoButtonWrapper.classList.add("black-button-wrapper");
+
+                const eInfoButtonLink = document.createElement("a");
+                eInfoButtonLink.setAttribute("href", "http://localhost:3000/movies/" + oMovie.id)
+
+                const eInfoButtonText = document.createElement("span");
+                eInfoButtonText.textContent = "learn more"
+
+                eArticle.appendChild(eDiv);
                 eDiv.appendChild(eImg);
+                eInfoButtonLink.appendChild(eInfoButtonText)
+                eInfoButtonWrapper.appendChild(eInfoButtonLink);          
+                eDiv.appendChild(eInfoButtonWrapper);
                 eSection.appendChild(eArticle);
             });
 
@@ -55,6 +70,7 @@ function onLoadHomePageMovies() {
             oHomePage.appendChild(eSection);
         });
 }
+
 
 
 /* exemplo de uso do Axios:
