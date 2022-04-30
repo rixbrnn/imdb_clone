@@ -8,21 +8,11 @@ axios.get('http://localhost:3000/movies')
 })
 
 function displayMovies(movie) {
-    document.getElementById(`id_${movie.id}`).innerText = movie.id
-    document.getElementById(`idTitle_${movie.id}`).innerText = movie.title
     document.getElementById(`idGenres_${movie.id}`).innerText = movie.genre_ids[0]
-    document.getElementById(`idDescription_${movie.id}`).innerText = movie.description
-    document.getElementById(`idImageUrl_${movie.id}`).innerText = movie.image_url
-    document.getElementById(`idYoutubeUrl_${movie.id}`).innerText = movie.youtube_url
-    document.getElementById(`idPegi_${movie.id}`).innerText = movie.pegi
-    document.getElementById(`idReleaseDate_${movie.id}`).innerText = movie.release_date
-    document.getElementById(`idCreationUser_${movie.id}`).innerText = movie.creation_user
-    document.getElementById(`idCreationDate_${movie.id}`).innerText = movie.creation_date
 }
 
-//foreach
 function setList(movies) {
-    var list = "";
+    let list = "";
     movies.forEach(movie => {
         list += getCard(movie)
     }); 
@@ -30,7 +20,14 @@ function setList(movies) {
 }
 
 function getCard(movie) {
-    return `<div class="cardMovie" id="movie_${movie.id}">${createImage(movie.image_url)} ${createSpan(movie.title)}</div>`
+    return (`<div class="cardMovie" id="movie_${movie.id}">
+                ${createImage(movie.image_url)} 
+                <div class="infoMovie">    
+                    <div class="titleMovie">${createSpan(movie.title)}</div>
+                    <div class="descriptionMovie">${createSpan(movie.description)}</div>
+                </div>
+            </div>`
+    )
 }
 
 function createSpan(el) {
