@@ -8,8 +8,13 @@ function getLastId() {
     })
 }
 
-getLastId()
 
 function verifyLastId(movies) {
     document.getElementById("id").value = movies.length
+}
+
+getLastId()
+
+function postMovie() {
+    alert("submit")
 }
