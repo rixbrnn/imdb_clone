@@ -5,16 +5,18 @@ function generateHeaderAndFooter() {
 
     eHeaderTemplate.innerHTML = `
     <div id="header-content">  
-        <h2 id="page-logo"> IMDb </h2>
-        <nav>
-            <ul>
-                <li><a href="/app/index.html">HOME</a></li>
-                <li><a href="/app/view/movies.html">MOVIES</a></li>
-                <li><a href="/app/view/add_movie.html">ADD MOVIE</a></li>
-                <li><a href="/app/view/reviews.html">REVIEWS</a></li>
-                <li><a href="/app/view/login.html">LOGIN</a></li>
-            </ul>
-        </nav>
+        <div id="header-items">
+            <h2 id="page-logo"> IMDb </h2>
+            <nav id="page-nav">
+                <ul>
+                    <li><a href="/app/index.html">HOME</a></li>
+                    <li><a href="/app/view/movies.html">MOVIES</a></li>
+                    <li><a href="/app/view/add_movie.html">ADD MOVIE</a></li>
+                    <li><a href="/app/view/reviews.html">REVIEWS</a></li>
+                    <li><a href="/app/view/login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     `;
 
@@ -84,6 +86,8 @@ function onLoadHomePageMovies() {
             oHomePage.appendChild(eSection);
         });
 }
+
+
 
 
 
