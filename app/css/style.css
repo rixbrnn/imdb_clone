@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   text-decoration: none;
     background-color: black;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjQ2Mi1uLTEzMC10ZXh0dXJlaWRlYV8xLmpwZw.jpg?s=KWnwElvrZQjrd95v8ifqQ5skVxjp4IoueaNPCyZjf5E");
     background-repeat: repeat;
@@ -20,27 +20,32 @@ body {
 }
 
 #header-content {
-  
-   /* min-height: 150px;*/
     margin: auto;
-   /* border: 1px solid;*/
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 50px;
-    background-image: /*linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,1)), */url("https://www.teahub.io/photos/full/101-1019747_passeio-das-aguas-cinema.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,1)), url("https://www.teahub.io/photos/full/101-1019747_passeio-das-aguas-cinema.jpg");
     background-size: 100%;
     background-position: 80% 48%;
-    background-blend-mode:darken
-    /*overflow-y:scroll;
-    overflow-x:hidden;*/
+    background-blend-mode:darken;
+    border-bottom: 1px solid white;
 }
 
 #header-items {
-  border: 1px solid white;
-  width: 75%; /* Can be in percentage also. */
+  width: 75%;
   margin: auto;
   padding: 10px;
   text-align: center;
+}
+
+/*#page-nav li::before{
+  content: "X";
+}*/
+
+#page-nav a{
+  text-shadow: 0px 0px 8px #000000;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer {
@@ -67,6 +72,12 @@ page {
     box-shadow: 0px -1px 15px 10px rgb(0, 0, 0);
 }
 
+#page-logo:hover {   
+  font-size: 45px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 nav{
     display: inline-block;
 }
@@ -84,7 +95,9 @@ nav a{
 }	
 
 nav a:hover{
-	color: #C78C19;
+	color: rgb(245 218 13 / 94%);
+  font-size: 30px;
+  transition: 0.2s;
 }
 
 
