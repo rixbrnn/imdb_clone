@@ -1,0 +1,55 @@
+.listMovie {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.imgCard {
+    width: 100px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.cardMovie {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    padding: 3px 0px 3px 0px;
+    margin: 0px 200px 0px 200px;
+}
+
+.cardMovie:hover {
+    padding: 0px;
+    border: 3px;
+    border-radius: 20px;
+    border-style: solid none solid none;
+    border-color: rgb(218, 233, 141);
+}
+
+.cardMovie:hover .titleMovie {
+    color: rgb(218, 233, 141);
+    text-decoration: underline;
+}
+
+.infoMovie {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.titleMovie {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.descriptionMovie {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
