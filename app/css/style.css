@@ -13,8 +13,6 @@ body {
 
   footer {
     background-color: rgb(41, 41, 41);
-    color: rgb(246, 246, 246);
-    /*padding: 40px 0;*/
     text-align: center;
     width: 100%;
 }
@@ -37,10 +35,6 @@ body {
   padding: 10px;
   text-align: center;
 }
-
-/*#page-nav li::before{
-  content: "X";
-}*/
 
 #page-nav a{
   text-shadow: 0px 0px 8px #000000;
@@ -65,7 +59,7 @@ page {
     /*font-weight: bold;*/
     color: black;
     border-radius: 10px;
-    background-color: rgb(245 218 13 / 94%);
+    background-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
     font-size: 35px;
     display: inline-block;
     margin: auto;
@@ -95,7 +89,6 @@ nav a{
 }	
 
 nav a:hover{
-	color: rgb(245 218 13 / 94%);
   font-size: 30px;
   transition: 0.2s;
 }
@@ -183,7 +176,7 @@ nav a:hover{
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(245 218 13 / 94%);
+    background-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
     transition: all .35s;
   }
   
