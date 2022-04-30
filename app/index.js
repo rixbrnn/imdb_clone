@@ -6,7 +6,7 @@ function generateHeaderAndFooter() {
     eHeaderTemplate.innerHTML = `
     <div id="header-content">  
         <div id="header-items">
-            <h2 id="page-logo"> IMDb </h2>
+            <a a href="/app/index.html" id="page-logo"> IMDb </a>
             <nav id="page-nav">
                 <ul>
                     <li><a href="/app/index.html">HOME</a></li>
