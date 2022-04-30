@@ -59,10 +59,23 @@ function onLoadHomePageMovies() {
                 const eInfoButtonText = document.createElement("span");
                 eInfoButtonText.textContent = "learn more"
 
+                const ePosterBriefing = document.createElement("div");
+                ePosterBriefing.classList.add("poster-briefing");
+
+                const eReleaseDate = document.createElement("div");
+                eReleaseDate.textContent = `Release date: ${oMovie.release_date}`;
+
+                const eDirectorName = document.createElement("div");
+                eDirectorName.textContent = `Director: ${oMovie.director}`;
+
+
                 eArticle.appendChild(eDiv);
                 eDiv.appendChild(eImg);
                 eInfoButtonLink.appendChild(eInfoButtonText)
-                eInfoButtonWrapper.appendChild(eInfoButtonLink);          
+                eInfoButtonWrapper.appendChild(eInfoButtonLink);           
+                ePosterBriefing.appendChild(eReleaseDate);
+                ePosterBriefing.appendChild(eDirectorName);
+                eDiv.appendChild(ePosterBriefing);
                 eDiv.appendChild(eInfoButtonWrapper);
                 eSection.appendChild(eArticle);
             });
