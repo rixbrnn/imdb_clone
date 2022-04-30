@@ -15,6 +15,10 @@ body {
     background-color: rgb(41, 41, 41);
     text-align: center;
     width: 100%;
+    color: rgb(246, 246, 246);
+    position: absolute;
+    bottom: 0;
+    padding-top: 100px;
 }
 
 #header-content {
@@ -93,6 +97,9 @@ nav a:hover{
   transition: 0.2s;
 }
 
+#movies-page{
+  padding-bottom: 0;
+}
 
 #movies-page-content{
     max-width: 1600px;

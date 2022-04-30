@@ -21,7 +21,7 @@ function generateHeaderAndFooter() {
     `;
 
     eFooterTemplate.innerHTML = `
-        <h2> Desenvolvimento para a web - Unisinos </h2>
+        <div> Web Development - Unisinos </div>
     `;
 
     document.querySelector("header").appendChild(eHeaderTemplate);
