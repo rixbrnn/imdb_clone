@@ -6,8 +6,6 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjQ2Mi1uLTEzMC10ZXh0dXJlaWRlYV8xLmpwZw.jpg?s=KWnwElvrZQjrd95v8ifqQ5skVxjp4IoueaNPCyZjf5E");
     background-repeat: repeat;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
 header, footer {
@@ -19,12 +17,14 @@ header, footer {
 }
 
 header {
-    min-height: 120px;
+    min-height: 50px;
     margin: auto;
+    padding: 1%;
 }
 
 footer {
     margin-top: auto;
+    position: static;
 }
 
 page {
@@ -66,7 +66,9 @@ nav a:hover{
 	text-decoration: underline;
 }
 
-
+#movies-page{
+  padding-top: 0%;
+}
 #movies-page-content{
     max-width: 1600px;
     margin-left: auto;
@@ -76,10 +78,12 @@ nav a:hover{
 .movies-section{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .poster-area{
     width: 33%;
+    min-width: 500px;;
 }
 
 .poster-content{
@@ -88,6 +92,7 @@ nav a:hover{
     align-items: center;
 }
 .poster-content img{
+    min-width: 100px;
     width: 90%;
     height: 120%;
     border: 15px solid rgb(31, 2, 2);
@@ -107,23 +112,6 @@ nav a:hover{
     transform: scale(1.1);
     transition: 0.2s;
 }
-
-/*.black-button{
-    color: #6e6b6c;
-    padding: 20px;
-    width: 260px;
-    height: 70px;
-    border: 1px solid #6e6b6c;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    text-decoration: none;
-    display: block;
-    font-weight: 100;
-    font-size: 30px;
-    text-align: center;
-    transition: color ease 1s;
-    margin: auto;
-}*/
 
 .black-button-wrapper{
     top: 50%;

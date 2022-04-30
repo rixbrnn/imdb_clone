@@ -37,7 +37,7 @@ function onLoadHomePageMovies() {
             const eSection = document.createElement("section");
             eSection.classList.add("movies-section")
             resp.data?.forEach(oMovie => {
-
+                const sMovieLink = "http://localhost:3000/movies/" + oMovie.id;
                 const eArticle = document.createElement("div");
                 eArticle.classList.add("poster-area");
 
@@ -47,13 +47,14 @@ function onLoadHomePageMovies() {
 
                 const eImg = document.createElement("img");
                 eImg.setAttribute("src", oMovie.image_url);
+                eImg.setAttribute("onclick", `javascript:window.location='${sMovieLink}';`);
                
 
                 const eInfoButtonWrapper = document.createElement("span");
                 eInfoButtonWrapper.classList.add("black-button-wrapper");
 
                 const eInfoButtonLink = document.createElement("a");
-                eInfoButtonLink.setAttribute("href", "http://localhost:3000/movies/" + oMovie.id)
+                eInfoButtonLink.setAttribute("href", sMovieLink);
 
                 const eInfoButtonText = document.createElement("span");
                 eInfoButtonText.textContent = "learn more"
