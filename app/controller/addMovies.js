@@ -1,3 +1,5 @@
+let emptyField = "";
+
 function getLastId() {
     axios.get('http://localhost:3000/movies')
     .then(resp => {
@@ -16,12 +18,28 @@ function verifyLastId(movies) {
 getLastId()
 
 function postMovie() {
-    const user = localStorage.getItem("currentuser"); 
+    emptyField = ""
+    const user = localStorage.getItem("currentUser"); 
     if (!user) {
         alert("Usuário não logado")
         return
     }
-    alert(`usuario ${user}`)
+    verifyEmptyField("title") 
+    verifyEmptyField("genre") 
+    verifyEmptyField("description") 
+    verifyEmptyField("image_url") 
+    verifyEmptyField("youtube_url") 
+    verifyEmptyField("pegi") 
+    verifyEmptyField("release_date") 
+    verifyEmptyField("creation_date") 
+    verifyEmptyField("director") 
+    
+
+    if (emptyField != ""){
+        alert(`Campos obrigatórios não preenchidos ${emptyField}`)
+        return
+    } 
+
     axios.post('http://localhost:3000/movies', 
         {
             "id":`${document.getElementById("id").value}`,
@@ -39,4 +57,10 @@ function postMovie() {
             console.log(resp.data);
             window.location.reload()
         });
+}
+
+function verifyEmptyField(field) {
+    if (document.getElementById(field).value === "") {
+        emptyField += `\n${field}`
+    }
 }
