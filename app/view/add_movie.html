@@ -13,14 +13,14 @@
         <header>
         </header>
         <page>
-            <form id="form">
+            <form id="form" class="form">
                 <input type="text" id="id" hidden>
-                <div class="forms">
-                    <label>Title:</label>
+                <div class="inputs">
+                    <label>Title:</label><br/>
                     <input type="text" id="title"/>
                 </div>
-                <div class="forms">
-                    <label>Genre:</label>
+                <div class="inputs">
+                    <label>Genre:</label><br/>
                     <select name="genreSelect" id="genre">
                         <option value="1">Comedy</option>
                         <option value="2">Drama</option>
@@ -31,40 +31,36 @@
                         <option value="7">Fantasy</option>
                     </select>
                 </div>
-                <div class="forms">
-                    <label>Description:</label>
+                <div class="inputs">
+                    <label>Description:</label><br/>
                     <input type="text" id="description"/>
                 </div>    
-                <div class="forms">
-                    <label>Image:</label>
+                <div class="inputs">
+                    <label>Image:</label><br/>
                     <input type="text" id="image_url"/>
                 </div>
-                <div class="forms">
-                    <label>Youtube:</label>
+                <div class="inputs">
+                    <label>Youtube:</label><br/>
                     <input type="text" id="youtube_url"/>
                 </div>
-                <div class="forms">
-                    <label>Pegi:</label>
+                <div class="inputs">
+                    <label>Pegi:</label><br/>
                     <input type="text" id="pegi"/>
                 </div>
-                <div class="forms">
-                    <label>Release Date:</label>
+                <div class="inputs">
+                    <label>Release Date:</label><br/>
                     <input type="text" id="release_date"/>
                 </div>
-                <div class="forms">
-                    <label>Creation Date:</label>
+                <div class="inputs">
+                    <label>Creation Date:</label><br/>
                     <input type="text" id="creation_date"/>
                 </div>
-                <div class="forms">
-                    <label>User:</label>
-                    <input type="text" id="creation_user"/>
-                </div>
-                <div class="forms">
-                    <label>Director:</label>
+                <div class="inputs">
+                    <label>Director:</label><br/>
                     <input type="text" id="director"/>
                 </div>
+                <button class="button-32" onclick="postMovie()">submit</button>
             </form>
-            <button onclick="postMovie()">submit</button>
         </page>
         <footer>
         </footer>
