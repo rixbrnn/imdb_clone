@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>IMDB Clone</title>
-        <meta charset="utf-8">
-        <script src="/node_modules/axios/dist/axios.min.js"></script>
-        <script src="../index.js" type="text/javascript" defer></script>
-    </head>
-    <body onload="generateHeaderAndFooter()">
-        <header>
-        </header>
-        <page>
-            <h1> Reviews to be listed here </h1>
-        </page>
-        <footer>
-        </footer>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reviews.css">
+    <title>IMDB Clone</title>
+    <meta charset="utf-8">
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../index.js" type="text/javascript" defer></script>
+</head>
+
+<body onload="generateHeaderAndFooter()">
+    <header>
+    </header>
+    <page>
+        <script src="../controller/review.js" type="text/javascript"></script>
+    </page>
+    <footer>
+    </footer>
+</body>
+
 </html>

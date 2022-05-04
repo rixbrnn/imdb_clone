@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user_style.css">
+    <title>IMDB Clone</title>
+    <meta charset="utf-8">
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../index.js" type="text/javascript" defer></script>
+</head>
+
+<body onload="generateHeaderAndFooter()">
+    <header>
+    </header>
+    <page>
+        <div>
+            <form class="userform">
+                <p class="register-user">Username</p>
+                <input class="i-form" type="text" id="reglogin">
+                <p class="register-user">Password</p>
+                <input class="i-form" type="text" id="regpassword">
+            </form>
+            <button class="button-logout" onclick="register()">Register</button>
+            <script src="../controller/register.js" type="text/javascript" defer></script>
+        </div>
+    </page>
+    <footer>
+    </footer>
+</body>
+
+</html>

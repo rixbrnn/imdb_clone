@@ -87,7 +87,8 @@ function onLoadHomePageMovies() {
         });
 }
 
-
+var logged = false;
+var currentuser;
 
 
 

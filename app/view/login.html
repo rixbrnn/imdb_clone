@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>IMDB Clone</title>
-        <meta charset="utf-8">
-        <script src="/node_modules/axios/dist/axios.min.js"></script>
-        <script src="../index.js" type="text/javascript" defer></script>
-    </head>
-    <body onload="generateHeaderAndFooter()">
-        <header>
-        </header>
-        <page>
-            <h1> Login logic to be added here </h1>
-        </page>
-        <footer>
-        </footer>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user_style.css">
+    <title>IMDB Clone</title>
+    <meta charset="utf-8">
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../index.js" type="text/javascript" defer></script>
+</head>
+
+<body onload="generateHeaderAndFooter()">
+    <header>
+    </header>
+    <page>
+        <login-format>
+            <script src="../controller/users.js" type="text/javascript" defer></script>
+        </login-format>
+    </page>
+    <footer>
+    </footer>
+</body>
+
 </html>
