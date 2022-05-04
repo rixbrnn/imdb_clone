@@ -1,0 +1,109 @@
+body,
+html {
+  overflow: hidden;
+  background-size: cover;
+  background-color: black;
+}
+
+
+.div-wel {
+  color: gold;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.userform {
+  background-image: linear-gradient(to right, #B38728, #BF953F, #FCF6BA, #FBF5B7, #AA771C, #B38728);
+  max-width: 500px;
+  min-width: 330px;
+  width: 40%;
+  padding: 20px 20px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+  height: 300px;
+}
+
+.form-group {
+  margin: 30px 0;
+  border-color: black;
+  min-width: 330px;
+}
+
+.l-form {
+  background-color: black;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.i-form {
+  border-radius: 12px;
+  padding: 15px;
+  width: 300px;
+}
+
+.button-login {
+  background-image: linear-gradient(to right, black,white, black);
+  border-radius: 20px;
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 10 0 0 15px;
+  font-weight: bold;
+  border-radius: 0px 0px 20px 20px;
+  width: 60%;
+  cursor: pointer;
+  height: 50px;
+  width: 20%;
+  min-width: 120px;
+}
+
+.button-login:hover {
+  background-image: linear-gradient(to right, rgb(195, 186, 186),black, rgb(190, 187, 187));
+  color: white;
+  transition: all .1s;
+}
+
+.button-logout {
+  background-image: linear-gradient(to right, black,white, black);
+  border-radius: 20px;
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 10 0 0 15px;
+  font-weight: bold;
+  border-radius: 0px 0px 20px 20px;
+  width: 60%;
+  cursor: pointer;
+  height: 50px;
+  width: 20%;
+  min-width: 120px;
+}
+
+.button-logout:hover {
+  background-image: linear-gradient(to right, rgb(195, 186, 186),black, rgb(190, 187, 187));
+  color: white;
+  transition: all .1s;
+}
+
+
+.register {
+  color: black;
+  cursor: pointer;
+}
+
+.register:hover{
+  color: white;
+}
+
+
+
+.register-user{
+  color: black;
+}
