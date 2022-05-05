@@ -19,7 +19,7 @@ getLastId()
 
 function postMovie() {
     emptyField = ""
-    const user = localStorage.getItem("currentUser"); 
+    const user = localStorage.getItem("currentuser"); 
     if (!user) {
         alert("Usuário não logado")
         return
