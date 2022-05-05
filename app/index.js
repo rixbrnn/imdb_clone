@@ -33,30 +33,29 @@ function onLoadHomePage() {
     onLoadHomePageMovies();
 }
 
+const sMovieLink = "./view/movie_details.html";
 function onLoadHomePageMovies() {
     axios.get('http://localhost:3000/movies')
         .then(resp => {
             const eSection = document.createElement("section");
             eSection.classList.add("movies-section")
             resp.data?.forEach(oMovie => {
-                const sMovieLink = "http://localhost:3000/movies/" + oMovie.id;
                 const eArticle = document.createElement("div");
                 eArticle.classList.add("poster-area");
 
                 const eDiv = document.createElement("article");
                 eDiv.classList.add("poster-content")
                 
-
                 const eImg = document.createElement("img");
                 eImg.setAttribute("src", oMovie.image_url);
-                eImg.setAttribute("onclick", `javascript:window.location='${sMovieLink}';`);
-               
-
+                eImg.setAttribute("onclick", `javascript:redirectForMoviePage(${oMovie.id})`);
+                
                 const eInfoButtonWrapper = document.createElement("span");
                 eInfoButtonWrapper.classList.add("black-button-wrapper");
 
                 const eInfoButtonLink = document.createElement("a");
-                eInfoButtonLink.setAttribute("href", sMovieLink);
+                eInfoButtonLink.setAttribute("onclick", `redirectForMoviePage(${oMovie.id})`);
+                eInfoButtonLink.setAttribute("href", sMovieLink)
 
                 const eInfoButtonText = document.createElement("span");
                 eInfoButtonText.textContent = "learn more"
@@ -90,7 +89,10 @@ function onLoadHomePageMovies() {
 var logged = false;
 var currentuser;
 
-
+function redirectForMoviePage(sMovieId){
+    localStorage.setItem("selectedMovie", sMovieId);
+    window.location=sMovieLink;
+}
 
 /* exemplo de uso do Axios:
 axios.post('http://localhost:3000/genres', {"foo":"bar"}).then(resp => {

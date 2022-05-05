@@ -18,7 +18,7 @@ function setList(movies) {
 function getCard(movie) {
     return (`<div class="cardMovie" id="movie_${movie.id}">
                 ${createImage(movie.image_url)} 
-                <div class="infoMovie">    
+                <div class="infoMovie" onclick="redirectForMoviePage(${movie.id})">    
                     <div class="titleMovie">${createSpan(movie.title)}</div>
                     <div class="descriptionMovie">${createSpan(movie.description)}</div>
                 </div>
@@ -32,4 +32,10 @@ function createSpan(el) {
 
 function createImage(el) {
     return `<img class="imgCard" src="${el}"/>`
+}
+
+function redirectForMoviePage(sMovieId){
+    const sMovieLink = "../view/movie_details.html";
+    localStorage.setItem("selectedMovie", sMovieId);
+    window.location=sMovieLink;
 }

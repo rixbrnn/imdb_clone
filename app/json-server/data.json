@@ -23,7 +23,7 @@
       ],
       "description": "Bitten by a radioactive spider in the subway, Brooklyn teenager Miles Morales suddenly develops mysterious powers that transform him into the one and only Spider-Man. When he meets Peter Parker, he soon realizes that there are many others who share his special, high-flying talents. Miles must now use his newfound skills to battle the evil Kingpin, a hulking madman who can open portals to other universes and pull different versions of Spider-Man into our world.",
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15Qk_nERnp1yp0g_eudjbDow_39q_hbBYNqrDLOztG-tO-vGQ",
-      "youtube_url": "https://www.youtube.com/watch?v=g4Hbz2jLxvQ",
+      "youtube_url": "https://www.youtube.com/embed/g4Hbz2jLxvQ",
       "pegi": "12",
       "release_date": "01/10/2019",
       "creation_user": "rixbrnn",
@@ -38,7 +38,7 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
@@ -53,12 +53,12 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/157720140525-uau-posters-filmes-bastardos-inglorios--inglourious-basterds-5-2.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube-nocookie.com/embed/KnrRy6kSFF0",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
       "creation_date": "04/29/2022",
-      "director": "Ednaldo Pereira"
+      "director": "Quentin Tarantino"
     },
     {
       "id": "3",
@@ -68,14 +68,14 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/6/167320140525-uau-posters-filmes-kill-bill-volume-1--kill-bill-vol-1-4-2.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
       "creation_date": "04/29/2022",
       "director": "Ednaldo Pereira"
-    }
-    ,{
+    },
+    {
       "id": "4",
       "title": "Avengers: Infinity wAR",
       "genre_ids": [
@@ -83,14 +83,14 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
       "creation_date": "04/29/2022",
       "director": "Ednaldo Pereira"
-    }
-    ,{
+    },
+    {
       "id": "5",
       "title": "Avengers: Infinity wAR",
       "genre_ids": [
@@ -98,14 +98,14 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
       "creation_date": "04/29/2022",
       "director": "Ednaldo Pereira"
-    }
-    ,{
+    },
+    {
       "id": "6",
       "title": "Avengers: Infinity wAR",
       "genre_ids": [
@@ -113,37 +113,37 @@
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://cdn.awsli.com.br/600x700/1610/1610163/produto/62282009/poster-batman-o-caveleiro-das-trevas-dark-knight-8-7d570fb4.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
       "creation_date": "04/29/2022",
       "director": "Ednaldo Pereira"
-    }
-    ,{
-      "id": "1",
-      "title": "Avengers: Infinity wAR",
-      "genre_ids": [
-        "2"
-      ],
-      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-      "image_url": "https://cdn.europosters.eu/image/750/posters/lord-of-the-rings-fellowship-i11723.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
-      "pegi": "12",
-      "release_date": "04/26/2018",
-      "creation_user": "rixbrnn",
-      "creation_date": "04/29/2022",
-      "director": "Ednaldo Pereira"
-    }
-    ,{
+    },
+    {
       "id": "7",
       "title": "Avengers: Infinity wAR",
       "genre_ids": [
         "2"
       ],
       "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "image_url": "https://cdn.europosters.eu/image/750/posters/lord-of-the-rings-fellowship-i11723.jpg",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+      "pegi": "12",
+      "release_date": "04/26/2018",
+      "creation_user": "rixbrnn",
+      "creation_date": "04/29/2022",
+      "director": "Ednaldo Pereira"
+    },
+    {
+      "id": "8",
+      "title": "Avengers: Infinity wAR",
+      "genre_ids": [
+        "2"
+      ],
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "image_url": "https://uauposters.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/4/049320140408-posters-filmes-tarantino-django.jpg",
-      "youtube_url": "https://www.youtube.com/watch?v=6ZfuNTqbHE8",
+      "youtube_url": "https://www.youtube.com/embed/6ZfuNTqbHE8",
       "pegi": "12",
       "release_date": "04/26/2018",
       "creation_user": "rixbrnn",
