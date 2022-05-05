@@ -1,15 +1,15 @@
-function register() {
 
-    console.log(document.getElementById("reglogin").value)
-    console.log(document.getElementById("regpassword").value)
+function register() {
+    var reglogin = document.getElementById("reglogin");
+    var regpassword = document.getElementById("regpassword");
     axios.post('http://localhost:3000/users',
         {
-            "id":`${document.getElementById("reglogin").value}`,
-            "password": `${document.getElementById("regpassword").value}`
+            "id": `${reglogin.value}`,
+            "password": `${regpassword.value}`
 
         }).then(resp => {
-            console.log(resp.data);
-            location.href = "..view/login.html"
+            alert("Account has been created succeffuly");
+            location.href = "../index.html"
         });
 
 }
