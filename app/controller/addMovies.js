@@ -55,7 +55,7 @@ function postMovie() {
             "director":`${document.getElementById("director").value}`
         }).then(resp => {
             console.log(resp.data);
-            window.location.reload()
+            window.location="./movies.html";
         });
 }
 
