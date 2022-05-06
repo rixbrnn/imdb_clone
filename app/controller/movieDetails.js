@@ -177,7 +177,7 @@ function loadMovieDetails(){
     })
 }
 
-var nRating;
+var nRating = 0;
 function getValorRating(nValueRating) {
     nRating = nValueRating;
 }
@@ -196,6 +196,7 @@ async function submitReview() {
     let nSelectedMovieId = localStorage.getItem("selectedMovie");
 
     var reviewRatingValue = nRating;
+    nRating = 0;
     var reviewTitle = document.querySelector("#title_rating");
     var reviewComment = document.querySelector("#comment_rating");
     var reviewCurrentDate = getCurrentDate();
