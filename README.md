@@ -1,3 +1,7 @@
+# Como rodar
+* npm install
+* npm run start_database
+
 # imdb_clone
 
 --------
