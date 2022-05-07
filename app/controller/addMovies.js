@@ -31,7 +31,6 @@ function postMovie() {
     verifyEmptyField("youtube_url") 
     verifyEmptyField("pegi") 
     verifyEmptyField("release_date") 
-    verifyEmptyField("creation_date") 
     verifyEmptyField("director") 
     
 
@@ -50,7 +49,7 @@ function postMovie() {
             "youtube_url":`${document.getElementById("youtube_url").value}`,
             "pegi":`${document.getElementById("pegi").value}`,
             "release_date":`${document.getElementById("release_date").value}`,
-            "creation_date":`${document.getElementById("creation_date").value}`,
+            "creation_date":`${new Date().toJSON().slice(0,10).replace(/-/g,'/')}`,
             "creation_user":`${user}`,
             "director":`${document.getElementById("director").value}`
         }).then(resp => {
